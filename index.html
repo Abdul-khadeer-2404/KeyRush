@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>KeyRush</h1>
+    </div>
+
+    <div class="controls">
+        <div class="control-group">
+            <button class="btn active" data-time="30">30s</button>
+            <button class="btn" data-time="60">60s</button>
+            <button class="btn" data-time="120">2min</button>
+        </div>
+        <div class="control-group">
+            <button class="btn active" data-mode="words">Words</button>
+            <button class="btn" data-mode="quotes">Quotes</button>
+        </div>
+        <div class="control-group">
+            <button class="btn" onclick="resetTest()">Reset</button>
+        </div>
+    </div>
+
+    <div class="test-area">
+        <div class="stats">
+            <div>WPM: <span id="wpm">0</span></div>
+            <div>Accuracy: <span id="accuracy">100</span>%</div>
+            <div>Time: <span id="timer">30</span>s</div>
+        </div>
+        
+        <div class="text-display" id="textDisplay"></div>
+        
+        <input type="text" class="input-field" id="inputField" placeholder="Click here and start typing...">
+    </div>
+
+    <div class="results" id="results">
+        <h2>Test Complete!</h2>
+        <div class="results-grid">
+            <div class="result-item">
+                <div class="result-value" id="finalWpm">0</div>
+                <div class="result-label">WPM</div>
+            </div>
+            <div class="result-item">
+                <div class="result-value" id="finalAccuracy">0</div>
+                <div class="result-label">Accuracy</div>
+            </div>
+            <div class="result-item">
+                <div class="result-value" id="finalCharacters">0</div>
+                <div class="result-label">Characters</div>
+            </div>
+            <div class="result-item">
+                <div class="result-value" id="finalErrors">0</div>
+                <div class="result-label">Errors</div>
+            </div>
+        </div>
+        <button class="btn" onclick="resetTest()" style="margin-top: 1rem;">Try Again</button>
+    </div>
+
+    <script src="js/words.js"></script>
+    <script src="js/typing-engine.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+{
+    "categories": {
+      "motivational": {
+        "name": "Motivational Quotes",
+        "quotes": [
+          {
+            "text": "The only way to do great work is to love what you do.",
+            "author": "Steve Jobs",
+            "difficulty": 2,
+            "length": 49
+          },
+          {
+            "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+            "author": "Winston Churchill",
+            "difficulty": 3,
+            "length": 81
+          },
+          {
+            "text": "Believe you can and you're halfway there.",
+            "author": "Theodore Roosevelt",
+            "difficulty": 1,
+            "length": 38
+          },
+          {
+            "text": "The future belongs to those who believe in the beauty of their dreams.",
+            "author": "Eleanor Roosevelt",
+            "difficulty": 2,
+            "length": 67
+          },
+          {
+            "text": "It is during our darkest moments that we must focus to see the light.",
+            "author": "Aristotle",
+            "difficulty": 2,
+            "length": 66
+          }
+        ]
+      },
+      "programming": {
+        "name": "Programming Quotes",
+        "quotes": [
+          {
+            "text": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+            "author": "Martin Fowler",
+            "difficulty": 3,
+            "length": 108
+          },
+          {
+            "text": "The best error message is the one that never shows up.",
+            "author": "Thomas Fuchs",
+            "difficulty": 2,
+            "length": 52
+          },
+          {
+            "text": "Code is like humor. When you have to explain it, it's bad.",
+            "author": "Cory House",
+            "difficulty": 2,
+            "length": 58
+          },
+          {
+            "text": "First, solve the problem. Then, write the code.",
+            "author": "John Johnson",
+            "difficulty": 1,
+            "length": 47
+          },
+          {
+            "text": "Programming isn't about what you know; it's about what you can figure out.",
+            "author": "Chris Pine",
+            "difficulty": 2,
+            "length": 73
+          }
+        ]
+      },
+      "literature": {
+        "name": "Literature Quotes",
+        "quotes": [
+          {
+            "text": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+            "author": "Jane Austen",
+            "difficulty": 3,
+            "length": 116
+          },
+          {
+            "text": "To be, or not to be, that is the question.",
+            "author": "William Shakespeare",
+            "difficulty": 1,
+            "length": 42
+          },
+          {
+            "text": "All happy families are alike; each unhappy family is unhappy in its own way.",
+            "author": "Leo Tolstoy",
+            "difficulty": 3,
+            "length": 76
+          },
+          {
+            "text": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+            "author": "John 1:1",
+            "difficulty": 2,
+            "length": 78
+          },
+          {
+            "text": "It was the best of times, it was the worst of times.",
+            "author": "Charles Dickens",
+            "difficulty": 2,
+            "length": 52
+          }
+        ]
+      },
+      "philosophy": {
+        "name": "Philosophy Quotes",
+        "quotes": [
+          {
+            "text": "I think, therefore I am.",
+            "author": "René Descartes",
+            "difficulty": 1,
+            "length": 24
+          },
+          {
+            "text": "The unexamined life is not worth living.",
+            "author": "Socrates",
+            "difficulty": 1,
+            "length": 39
+          },
+          {
+            "text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+            "author": "Aristotle",
+            "difficulty": 2,
+            "length": 75
+          },
+          {
+            "text": "The only true wisdom is in knowing you know nothing.",
+            "author": "Socrates",
+            "difficulty": 2,
+            "length": 52
+          },
+          {
+            "text": "Life must be understood backward. But it must be lived forward.",
+            "author": "Søren Kierkegaard",
+            "difficulty": 2,
+            "length": 62
+          }
+        ]
+      },
+      "science": {
+        "name": "Science Quotes",
+        "quotes": [
+          {
+            "text": "The important thing is not to stop questioning.",
+            "author": "Albert Einstein",
+            "difficulty": 1,
+            "length": 45
+          },
+          {
+            "text": "Science is a way of thinking much more than it is a body of knowledge.",
+            "author": "Carl Sagan",
+            "difficulty": 2,
+            "length": 69
+          },
+          {
+            "text": "Imagination is more important than knowledge.",
+            "author": "Albert Einstein",
+            "difficulty": 1,
+            "length": 42
+          },
+          {
+            "text": "The good thing about science is that it's true whether or not you believe in it.",
+            "author": "Neil deGrasse Tyson",
+            "difficulty": 3,
+            "length": 78
+          },
+          {
+            "text": "In science, there is only physics; all the rest is stamp collecting.",
+            "author": "Ernest Rutherford",
+            "difficulty": 2,
+            "length": 67
+          }
+        ]
+      }
+    },
+    "difficulty_levels": {
+      "1": {
+        "name": "Easy",
+        "description": "Short quotes with simple vocabulary"
+      },
+      "2": {
+        "name": "Medium",
+        "description": "Medium length quotes with moderate complexity"
+      },
+      "3": {
+        "name": "Hard",
+        "description": "Long quotes with complex vocabulary and punctuation"
+      }
+    }
+  }

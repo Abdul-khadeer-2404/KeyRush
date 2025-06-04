@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    color: #f5f6fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 1rem 2rem 1rem;
+    letter-spacing: 0.01em;
+}
+
+/* --- Enhanced KeyRush Logo Styles --- */
+.header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    font-family: 'Fira Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    color: #00f2a6;
+    background: linear-gradient(90deg, #00b894 10%, #00cec9 60%, #00f2a6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow:
+        0 4px 24px #00b89433,
+        0 1px 0 #232526,
+        0 0px 0 #00cec9;
+    padding: 0.2rem 1.2rem 0.2rem 1.2rem;
+    border-radius: 18px;
+    position: relative;
+    transition: text-shadow 0.2s, background 0.2s;
+    user-select: none;
+    /* Subtle underline effect */
+    box-shadow: 0 6px 0 -4px #00cec9cc;
+    /* Modernistic accent bar */
+    overflow: visible;
+}
+
+.header h1::after {
+    content: '';
+    display: block;
+    margin: 0.35rem auto 0 auto;
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #00b894 0%, #00cec9 100%);
+    opacity: 0.85;
+    transition: width 0.2s;
+}
+
+.header h1:hover,
+.header h1:focus {
+    text-shadow:
+        0 6px 32px #00cec9aa,
+        0 2px 0 #232526;
+    background: linear-gradient(90deg, #00cec9 0%, #00b894 100%);
+    box-shadow: 0 8px 0 -4px gainsboro;
+}
+
+@media (max-width: 700px) {
+    .header h1 {
+        font-size: 2.2rem;
+        padding: 0.15rem 0.7rem;
+    }
+    .header h1::after {
+        width: 38px;
+        height: 3px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        margin-bottom: 1.2rem;
+    }
+    .header h1 {
+        font-size: 1.3rem;
+        padding: 0.08rem 0.3rem;
+        border-radius: 10px;
+    }
+    .header h1::after {
+        width: 22px;
+        height: 2px;
+    }
+}
+
+/* --- End Enhanced KeyRush Logo Styles --- */
+
+.controls {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.control-group {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.btn {
+    background: linear-gradient(90deg, #353b48 0%, #232526 100%);
+    color: #f5f6fa;
+    border: 2px solid #00b894;
+    padding: 0.6rem 1.3rem;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: 
+        background 0.2s, 
+        color 0.2s, 
+        border-color 0.2s, 
+        transform 0.1s;
+}
+
+.btn:hover, .btn.active {
+    background: linear-gradient(90deg, #00b894 0%, #00cec9 100%);
+    color: #232526;
+    border-color: #00cec9;
+    transform: translateY(-2px) scale(1.04);
+}
+
+.test-area {
+    width: 100%;
+    max-width: 850px;
+    margin-bottom: 2.5rem;
+    background: rgba(44, 62, 80, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    padding: 2rem 2.5rem 2.5rem 2.5rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #00cec9;
+    letter-spacing: 0.02em;
+}
+
+.stats > div {
+    background: rgba(0, 206, 201, 0.07);
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+}
+
+.text-display {
+    background: linear-gradient(90deg, #353b48 0%, #232526 100%);
+    padding: 2.2rem 2rem;
+    border-radius: 10px;
+    line-height: 2.1;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    height: 170px;
+    position: relative;
+    overflow-y: auto;
+    word-break: break-word;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    border: 1.5px solid #00b894;
+}
+
+/* Custom scrollbar styles for .text-display */
+.text-display::-webkit-scrollbar {
+    width: 10px;
+    background: #232526;
+    border-radius: 8px;
+}
+
+.text-display::-webkit-scrollbar-thumb {
+    background: #00b894;
+    border-radius: 8px;
+    border: 2px solid #232526;
+}
+
+.text-display::-webkit-scrollbar-thumb:hover {
+    background: #00cec9;
+}
+
+.text-display {
+    scrollbar-width: thin;
+    scrollbar-color: #00b894 #232526;
+}
+
+.text-content {
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1);
+    transform: translateY(0);
+}
+
+.word {
+    margin-right: 0.7rem;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    padding-bottom: 0.1rem;
+}
+
+.char {
+    position: relative;
+    font-variant-ligatures: none;
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    font-size: 1.1em;
+    transition: color 0.15s, background 0.15s;
+}
+
+.char.correct {
+    color: #00b894;
+    background: transparent;
+}
+
+.char.incorrect {
+    color: #d63031;
+    background: rgba(214, 48, 49, 0.18);
+    border-radius: 2px;
+    padding: 0 2px;
+}
+
+.char.current {
+    background: #00cec9;
+    color: #232526;
+    border-radius: 2px;
+    animation: blink 1s infinite;
+    box-shadow: 0 0 0 2px #00cec933;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0.4; }
+}
+
+.input-field {
+    width: 100%;
+    padding: 1.1rem 1.2rem;
+    font-size: 1.15rem;
+    font-family: inherit;
+    background: #232526;
+    color: #f5f6fa;
+    border: 2px solid #00b894;
+    border-radius: 6px;
+    outline: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.input-field:focus {
+    border-color: #00cec9;
+    box-shadow: 0 0 0 2px #00cec955;
+}
+
+.results {
+    display: none;
+    text-align: center;
+    background: linear-gradient(90deg, #353b48 0%, #232526 100%);
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    margin-bottom: 2rem;
+    border: 1.5px solid #00b894;
+}
+
+.results.show {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.98);}
+    to { opacity: 1; transform: scale(1);}
+}
+
+.results h2 {
+    margin-bottom: 1.2rem;
+    color: #00b894;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.2rem;
+    margin: 1.2rem 0;
+}
+
+.result-item {
+    padding: 1.2rem 0.5rem;
+    background: #232526;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1.5px solid #00b89422;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-value {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #00cec9;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.03em;
+}
+
+.result-label {
+    font-size: 1rem;
+    color: #b2bec3;
+    letter-spacing: 0.02em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .test-area {
+        max-width: 98vw;
+        padding: 1.5rem 1.2rem 2rem 1.2rem;
+    }
+    .results {
+        max-width: 98vw;
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .test-area {
+        padding: 1.2rem 0.7rem 1.5rem 0.7rem;
+    }
+    .text-display {
+        font-size: 1.15rem;
+        padding: 1.2rem 0.7rem;
+        height: 120px;
+    }
+    .stats {
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+    .results h2 {
+        font-size: 1.3rem;
+    }
+    .results-grid {
+        gap: 0.7rem;
+    }
+    .result-value {
+        font-size: 1.3rem;
+    }
+    .btn {
+        font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 1.2rem 0.2rem 1rem 0.2rem;
+    }
+    .header {
+        margin-bottom: 1.2rem;
+    }
+    .header h1 {
+        font-size: 1.3rem;
+    }
+    .controls {
+        gap: 0.5rem;
+        margin-bottom: 1.2rem;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .control-group {
+        gap: 0.4rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .test-area {
+        padding: 0.7rem 0.2rem 1rem 0.2rem;
+        margin-bottom: 1.2rem;
+    }
+    .text-display {
+        font-size: 0.95rem;
+        padding: 0.7rem 0.2rem;
+        height: 80px;
+    }
+    .input-field {
+        font-size: 0.95rem;
+        padding: 0.7rem 0.7rem;
+    }
+    .results {
+        padding: 1rem 0.2rem;
+        margin-bottom: 1rem;
+    }
+    .results h2 {
+        font-size: 1rem;
+    }
+    .results-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.4rem;
+    }
+    .result-item {
+        padding: 0.7rem 0.2rem;
+    }
+    .result-value {
+        font-size: 1rem;
+    }
+    .result-label {
+        font-size: 0.85rem;
+    }
+}

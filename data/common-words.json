@@ -1,0 +1,96 @@
+{
+    "categories": {
+      "basic": {
+        "name": "Basic Words",
+        "difficulty": 1,
+        "words": [
+          "the", "be", "to", "of", "and", "a", "in", "that", "have", "i",
+          "it", "for", "not", "on", "with", "he", "as", "you", "do", "at",
+          "this", "but", "his", "by", "from", "they", "she", "or", "an", "will",
+          "my", "one", "all", "would", "there", "their", "what", "so", "up", "out",
+          "if", "about", "who", "get", "which", "go", "me", "when", "make", "can",
+          "like", "time", "no", "just", "him", "know", "take", "people", "into", "year",
+          "your", "good", "some", "could", "them", "see", "other", "than", "then", "now",
+          "look", "only", "come", "its", "over", "think", "also", "back", "after", "use",
+          "two", "how", "our", "work", "first", "well", "way", "even", "new", "want",
+          "because", "any", "these", "give", "day", "most", "us", "is", "was", "are"
+        ]
+      },
+      "intermediate": {
+        "name": "Intermediate Words",
+        "difficulty": 2,
+        "words": [
+          "through", "should", "where", "being", "before", "here", "between", "during", "against",
+          "without", "under", "while", "those", "place", "right", "great", "another", "same",
+          "different", "move", "following", "thought", "school", "house", "never", "again",
+          "might", "every", "don't", "does", "got", "united", "left", "number", "course",
+          "war", "until", "always", "away", "something", "fact", "though", "water", "less",
+          "public", "put", "think", "almost", "hand", "enough", "far", "took", "head",
+          "yet", "government", "system", "better", "set", "told", "nothing", "night",
+          "end", "why", "called", "didn't", "eyes", "find", "going", "point", "made",
+          "world", "information", "map", "find", "where", "much", "family", "own",
+          "leave", "put", "old", "while", "mean", "keep", "student", "why", "let",
+          "great", "same", "big", "group", "begin", "seem", "country", "help", "talk",
+          "turn", "ask", "increase", "child", "need", "open", "example", "life", "both"
+        ]
+      },
+      "advanced": {
+        "name": "Advanced Words",
+        "difficulty": 3,
+        "words": [
+          "important", "children", "side", "feet", "care", "second", "enough", "book",
+          "carry", "took", "science", "eat", "room", "friend", "began", "idea", "fish",
+          "mountain", "stop", "once", "base", "hear", "horse", "cut", "sure", "watch",
+          "color", "face", "wood", "main", "open", "seem", "together", "next", "white",
+          "children", "begin", "got", "walk", "example", "ease", "paper", "group",
+          "always", "music", "those", "both", "mark", "often", "letter", "until",
+          "mile", "river", "car", "feet", "care", "second", "enough", "plain", "girl",
+          "usual", "young", "ready", "above", "ever", "red", "list", "though", "feel",
+          "talk", "bird", "soon", "body", "dog", "family", "direct", "pose", "leave",
+          "song", "measure", "door", "product", "black", "short", "numeral", "class",
+          "wind", "question", "happen", "complete", "ship", "area", "half", "rock",
+          "order", "fire", "south", "problem", "piece", "told", "knew", "pass", "since"
+        ]
+      },
+      "programming": {
+        "name": "Programming Terms",
+        "difficulty": 2,
+        "words": [
+          "function", "variable", "class", "object", "method", "array", "string", "boolean",
+          "integer", "float", "loop", "condition", "statement", "expression", "operator",
+          "parameter", "argument", "return", "import", "export", "module", "library",
+          "framework", "algorithm", "database", "query", "server", "client", "api",
+          "interface", "protocol", "syntax", "semantic", "compiler", "interpreter",
+          "debug", "error", "exception", "validation", "authentication", "authorization",
+          "encryption", "hash", "token", "session", "cookie", "header", "request",
+          "response", "status", "code", "repository", "version", "branch", "commit",
+          "merge", "pull", "push", "clone", "fork", "issue", "ticket", "bug", "feature",
+          "refactor", "optimize", "performance", "memory", "storage", "cache", "thread",
+          "process", "async", "await", "promise", "callback", "event", "listener",
+          "handler", "trigger", "dispatch", "subscribe", "publish", "queue", "stack"
+        ]
+      }
+    },
+    "wordLists": {
+      "top100": [
+        "the", "be", "to", "of", "and", "a", "in", "that", "have", "i", "it", "for",
+        "not", "on", "with", "he", "as", "you", "do", "at", "this", "but", "his", "by",
+        "from", "they", "she", "or", "an", "will", "my", "one", "all", "would", "there",
+        "their", "what", "so", "up", "out", "if", "about", "who", "get", "which", "go",
+        "me", "when", "make", "can", "like", "time", "no", "just", "him", "know", "take",
+        "people", "into", "year", "your", "good", "some", "could", "them", "see", "other",
+        "than", "then", "now", "look", "only", "come", "its", "over", "think", "also",
+        "back", "after", "use", "two", "how", "our", "work", "first", "well", "way",
+        "even", "new", "want", "because", "any", "these", "give", "day", "most", "us",
+        "is", "was", "are", "been", "has", "had", "were", "said", "each", "which"
+      ],
+      "top200": [
+        "through", "should", "where", "being", "before", "here", "between", "during",
+        "against", "without", "under", "while", "those", "place", "right", "great",
+        "another", "same", "different", "move", "following", "thought", "school",
+        "house", "never", "again", "might", "every", "don't", "does", "got", "united",
+        "left", "number", "course", "war", "until", "always", "away", "something",
+        "fact", "though", "water", "less", "public", "put", "think", "almost", "hand"
+      ]
+    }
+  }

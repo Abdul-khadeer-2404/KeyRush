@@ -1,0 +1,158 @@
+{
+    "categories": {
+      "pangrams": {
+        "name": "Pangrams",
+        "description": "Sentences containing every letter of the alphabet",
+        "texts": [
+          {
+            "title": "Classic Pangram",
+            "text": "The quick brown fox jumps over the lazy dog.",
+            "difficulty": 2,
+            "type": "pangram"
+          },
+          {
+            "title": "Typing Practice",
+            "text": "Pack my box with five dozen liquor jugs.",
+            "difficulty": 2,
+            "type": "pangram"
+          },
+          {
+            "title": "Waltz Pangram",
+            "text": "Waltz, bad nymph, for quick jigs vex.",
+            "difficulty": 3,
+            "type": "pangram"
+          }
+        ]
+      },
+      "common_phrases": {
+        "name": "Common Phrases",
+        "description": "Frequently used phrases and expressions",
+        "texts": [
+          {
+            "title": "Greeting",
+            "text": "Hello, how are you doing today? I hope you're having a wonderful day!",
+            "difficulty": 1,
+            "type": "phrase"
+          },
+          {
+            "title": "Business Email",
+            "text": "Thank you for your email. I will review the documents and get back to you by the end of the week.",
+            "difficulty": 2,
+            "type": "phrase"
+          },
+          {
+            "title": "Technical Description",
+            "text": "The application requires proper configuration of environment variables before deployment to production servers.",
+            "difficulty": 3,
+            "type": "phrase"
+          }
+        ]
+      },
+      "numbers_symbols": {
+        "name": "Numbers & Symbols",
+        "description": "Practice with numbers, punctuation, and special characters",
+        "texts": [
+          {
+            "title": "Basic Numbers",
+            "text": "1234567890 0987654321 12345 67890",
+            "difficulty": 1,
+            "type": "numbers"
+          },
+          {
+            "title": "Mixed Content",
+            "text": "The price is $29.99 (including 15% tax). Order #12345 was placed on 01/15/2024 at 3:45 PM.",
+            "difficulty": 2,
+            "type": "mixed"
+          },
+          {
+            "title": "Programming Syntax",
+            "text": "function calculateSum(a, b) { return a + b; } // Returns sum of two numbers",
+            "difficulty": 3,
+            "type": "code"
+          },
+          {
+            "title": "Special Characters",
+            "text": "!@#$%^&*()_+-=[]{}|;':\",./<>?`~",
+            "difficulty": 3,
+            "type": "symbols"
+          }
+        ]
+      },
+      "typing_exercises": {
+        "name": "Typing Exercises",
+        "description": "Structured exercises for improving typing skills",
+        "texts": [
+          {
+            "title": "Home Row Practice",
+            "text": "asdf jkl; asdf jkl; sad lad ask fall jak sala fads flask",
+            "difficulty": 1,
+            "type": "exercise"
+          },
+          {
+            "title": "Top Row Integration",
+            "text": "qwerty uiop type quite power troupe write poetry quilt tower",
+            "difficulty": 2,
+            "type": "exercise"
+          },
+          {
+            "title": "Bottom Row Challenge",
+            "text": "zxcvbnm,. maze cabin venom box zinc vixen bronze complex",
+            "difficulty": 2,
+            "type": "exercise"
+          },
+          {
+            "title": "All Rows Combined",
+            "text": "The five boxing wizards jump quickly over the frozen river in November.",
+            "difficulty": 3,
+            "type": "exercise"
+          }
+        ]
+      },
+      "word_combinations": {
+        "name": "Word Combinations",
+        "description": "Common word patterns and combinations",
+        "texts": [
+          {
+            "title": "Double Letters",
+            "text": "bell book cell cool door feed good hall jazz keep loop moon noon book",
+            "difficulty": 2,
+            "type": "pattern"
+          },
+          {
+            "title": "Common Bigrams",
+            "text": "the and ing ion tion ment ness able ible ship ward",
+            "difficulty": 1,
+            "type": "pattern"
+          },
+          {
+            "title": "Difficult Combinations",
+            "text": "rhythm psychology sphinx strength through thoughts laughs coughs",
+            "difficulty": 3,
+            "type": "pattern"
+          }
+        ]
+      }
+    },
+    "difficulty_settings": {
+      "1": {
+        "name": "Beginner",
+        "description": "Simple words and basic punctuation",
+        "wpm_target": 20
+      },
+      "2": {
+        "name": "Intermediate", 
+        "description": "Mixed content with moderate complexity",
+        "wpm_target": 40
+      },
+      "3": {
+        "name": "Advanced",
+        "description": "Complex text with special characters",
+        "wpm_target": 60
+      }
+    },
+    "user_texts": {
+      "saved": [],
+      "favorites": [],
+      "recent": []
+    }
+  }
